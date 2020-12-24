@@ -6,3 +6,4 @@ A little approach to help beginner programmers with 100 most popular coding prob
 1. Check if a number is positive or negative
 2. Even Odd
 3. Sum of first N natural numbers
+4. Sum of numbers in a given range
