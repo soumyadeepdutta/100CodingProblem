@@ -9,3 +9,4 @@ A little approach to help beginner programmers with 100 most popular coding prob
 4. Sum of numbers in a given range
 5. Greatest among two numbers 
 6. Greatest among three numbers
+7. Leap year
