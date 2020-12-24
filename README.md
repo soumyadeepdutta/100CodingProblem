@@ -4,3 +4,5 @@ A little approach to help beginner programmers with 100 most popular coding prob
 
 ## List of problems
 1. Check if a number is positive or negative
+2. Even Odd
+3. Sum of first N natural numbers
