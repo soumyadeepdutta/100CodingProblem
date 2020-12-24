@@ -11,3 +11,4 @@ A little approach to help beginner programmers with 100 most popular coding prob
 6. Greatest among three numbers
 7. Leap year
 8. Check prime number
+9. Prime numbers in a range
