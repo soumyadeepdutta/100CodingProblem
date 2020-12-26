@@ -19,6 +19,10 @@ A little approach to help beginner programmers with 100 most popular coding prob
 14. Fibonacci series
 15. Factorial of a number
 16. Strong number
+17. Power of a number
+18. Perfect number
+19. Perfect Square
+20. Count the number of digits of a number
 
 ## References
 * [GeeksForGeeks](https://www.geeksforgeeks.org/)
