@@ -15,3 +15,7 @@ A little approach to help beginner programmers with 100 most popular coding prob
 10. Sum of all digits of a number
 11. Reverse of a number
 12. Palindrome number
+13. Armstrong number
+
+## References
+* GeekForGeeks
