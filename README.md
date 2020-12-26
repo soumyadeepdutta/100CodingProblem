@@ -13,3 +13,5 @@ A little approach to help beginner programmers with 100 most popular coding prob
 8. Check prime number
 9. Prime numbers in a range
 10. Sum of all digits of a number
+11. Reverse of a number
+12. Palindrome number
