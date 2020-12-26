@@ -16,6 +16,11 @@ A little approach to help beginner programmers with 100 most popular coding prob
 11. Reverse of a number
 12. Palindrome number
 13. Armstrong number
+14. Fibonacci series
+15. Factorial of a number
+16. Strong number
 
 ## References
-* GeekForGeeks
+* [GeeksForGeeks](https://www.geeksforgeeks.org/)
+* [PrepInsta](https://prepinsta.com/top-100-codes/)
+* [Wikipedia.org](https://www.wikipedia.org/)

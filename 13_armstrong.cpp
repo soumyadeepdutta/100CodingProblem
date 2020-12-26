@@ -22,3 +22,6 @@ int main(void){
         std::cout<<"Not Armstrong"<<std::endl;
     }
 }
+
+// task for you is to create a program t o list all
+// armstrong number in a given range
