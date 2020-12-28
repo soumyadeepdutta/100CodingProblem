@@ -28,8 +28,13 @@ A little approach to help beginner programmers with 100 most popular coding prob
 23. Binary to Decimal
 24. Decimal to Binary
 25. Decimal to Octal
+26. Binary to Octal
+27. Octal to Decimal
+28. Octal to Binary
 
 ## References
 * [GeeksForGeeks](https://www.geeksforgeeks.org/)
 * [PrepInsta](https://prepinsta.com/top-100-codes/)
 * [Wikipedia.org](https://www.wikipedia.org/)
+* [Programiz](https://www.programiz.com/)
+* [Mathisfun](https://www.mathsisfun.com/)

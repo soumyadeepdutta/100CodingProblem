@@ -1,5 +1,5 @@
-// print factorial of a number
-// factorial of 5 = 5*4*3*2*1 = 120
+// nPr = n! / (n-r)!
+// read here: https://www.mathsisfun.com/combinatorics/combinations-permutations.html
 
 #include <iostream>
 
@@ -16,7 +16,7 @@ long factorial(long num)
 
 int main(void)
 {
-    int num;
-    std::cin >> num;
-    std::cout << factorial(num) << std::endl;
+    int n, r;
+    std::cin >> n >> r;
+    std::cout << factorial(n)/factorial(n-r) << std::endl;
 }
