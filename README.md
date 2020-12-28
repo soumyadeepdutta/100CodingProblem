@@ -23,6 +23,11 @@ A little approach to help beginner programmers with 100 most popular coding prob
 18. Perfect number
 19. Perfect Square
 20. Count the number of digits of a number
+21. GCD or HCF of two numbers
+22. LCM of two numbers
+23. Binary to Decimal
+24. Decimal to Binary
+25. Decimal to Octal
 
 ## References
 * [GeeksForGeeks](https://www.geeksforgeeks.org/)
