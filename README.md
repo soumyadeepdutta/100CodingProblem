@@ -31,6 +31,13 @@ A little approach to help beginner programmers with 100 most popular coding prob
 26. Binary to Octal
 27. Octal to Decimal
 28. Octal to Binary
+29. Permutation [nPr]
+30. Combination [nCr]
+
+## Conclusion
+
+Most of the codes are in worst time complexity. As this collection is made for beginners so simplicity is the main priority here. But anyone wants to contribute and make this repository usable for intermediate/advanced programmers is always welcome.
+
 
 ## References
 * [GeeksForGeeks](https://www.geeksforgeeks.org/)
