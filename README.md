@@ -33,6 +33,11 @@ A little approach to help beginner programmers with 100 most popular coding prob
 28. Octal to Binary
 29. Permutation [nPr]
 30. Combination [nCr]
+31. Perimeter and Area of square
+32. Perimeter/Circumference and Area of circle
+33. Perimeter and Area of rectangle
+34. Area of triangle
+35. Surface area and Volume of cube
 
 ## Conclusion
 
