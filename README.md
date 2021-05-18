@@ -3,11 +3,12 @@
 A little approach to help beginner programmers with 100 most popular coding problem with their solutions in C++
 
 ## List of problems
+
 1. Check if a number is positive or negative
 2. Even Odd
 3. Sum of first N natural numbers
 4. Sum of numbers in a given range
-5. Greatest among two numbers 
+5. Greatest among two numbers
 6. Greatest among three numbers
 7. Leap year
 8. Check prime number
@@ -38,15 +39,17 @@ A little approach to help beginner programmers with 100 most popular coding prob
 33. Perimeter and Area of rectangle
 34. Area of triangle
 35. Surface area and Volume of cube
+36. Math problem 1
+37. Linked list
 
 ## Conclusion
 
 Most of the codes are in worst time complexity. As this collection is made for beginners so simplicity is the main priority here. But anyone wants to contribute and make this repository usable for intermediate/advanced programmers is always welcome.
 
-
 ## References
-* [GeeksForGeeks](https://www.geeksforgeeks.org/)
-* [PrepInsta](https://prepinsta.com/top-100-codes/)
-* [Wikipedia.org](https://www.wikipedia.org/)
-* [Programiz](https://www.programiz.com/)
-* [Mathisfun](https://www.mathsisfun.com/)
+
+- [GeeksForGeeks](https://www.geeksforgeeks.org/)
+- [PrepInsta](https://prepinsta.com/top-100-codes/)
+- [Wikipedia.org](https://www.wikipedia.org/)
+- [Programiz](https://www.programiz.com/)
+- [Mathisfun](https://www.mathsisfun.com/)
