@@ -1,63 +1,87 @@
 // create a single linked list and show its operations.
 #include <iostream>
-using namespace std;
 
 class Node
 {
 public:
-    int data;
-    Node *next;
-    Node(int val)
+    int value;
+    Node *next = nullptr;
+
+    Node(int x) : value(x) {}
+
+    void print_value()
     {
-        data = val;
-        next = NULL;
+        std::cout << value << "\t";
+    }
+
+    ~Node()
+    {
+        std::cout << "Cleared " << value << "\n";
     }
 };
 
-void insertAtEnd(Node *&head, int val)
+class LinkedListStack
 {
-    Node *newNode = new Node(val);
-    if (head == NULL)
+private:
+    Node *top = nullptr;
+
+public:
+    void push(int x)
     {
-        head = newNode;
-        return;
+        Node *node = new Node(x);
+        node->next = top;
+        top = node;
     }
 
-    Node *temp = head;
-    while (temp->next != NULL)
+    void pop()
     {
-        temp = temp->next;
-    }
-    temp->next = newNode;
-}
+        if (top == nullptr)
+        {
+            std::cout << "Stack is empty.\n";
+            return;
+        }
 
-void insertAtBeginning(Node *&head, int val)
-{
-    Node *newNode = new Node(val);
-    if (head == NULL)
+        Node *temp = top;
+        top = top->next;
+        delete temp;
+    }
+
+    void print()
     {
-        head = newNode;
-        return;
+        Node *temp = top;
+        while (temp)
+        {
+            temp->print_value();
+            temp = temp->next;
+        }
+        std::cout << std::endl;
     }
-    newNode->next = head;
-    head = newNode;
-}
 
-void display(Node *head)
-{
-    Node *temp = head;
-    while (temp != NULL)
+    ~LinkedListStack()
     {
-        cout << temp->data << " ";
-        temp = temp->next;
+        Node *current = top;
+        while (current)
+        {
+            Node *next = current->next;
+            delete current;
+            current = next;
+        }
+        std::cout << "Cleared LinkedListStack!\n";
     }
-}
+};
 
-int main(void)
+int main()
 {
-    // create new linked list
-    Node *head = new Node(1);
-    insertAtEnd(head, 2);
-    insertAtBeginning(head, 3);
-    display(head);
+    LinkedListStack stack;
+    stack.push(1);
+    stack.push(12);
+    stack.print();
+    stack.push(13);
+    stack.print();
+    stack.push(16);
+    stack.print();
+    stack.pop();
+    stack.print();
+
+    return 0;
 }
