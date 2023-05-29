@@ -46,6 +46,24 @@ public:
         delete temp;
     }
 
+    void reverse()
+    {
+        Node *prev = nullptr;
+        Node *next = nullptr;
+        Node *current = top;
+        while (current)
+        {
+            // store next
+            next = current->next;
+            // update next
+            current->next = prev;
+            // move
+            prev = current;
+            current = next;
+        }
+        top = prev;
+    }
+
     void print()
     {
         Node *temp = top;
@@ -75,12 +93,14 @@ int main()
     LinkedListStack stack;
     stack.push(1);
     stack.push(12);
-    stack.print();
+    // stack.print();
     stack.push(13);
-    stack.print();
+    // stack.print();
     stack.push(16);
+    // stack.print();
+    // stack.pop();
     stack.print();
-    stack.pop();
+    stack.reverse();
     stack.print();
 
     return 0;
