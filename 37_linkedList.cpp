@@ -1,5 +1,6 @@
 // create a single linked list and show its operations.
 #include <iostream>
+#include <vector>
 
 class Node
 {
@@ -78,6 +79,33 @@ public:
         std::cout << "Middle " << slow->value << std::endl;
     }
 
+    void make_circular()
+    {
+        Node *lastNode = top;
+        while (lastNode->next)
+        {
+            lastNode = lastNode->next;
+        }
+        lastNode->next = top;
+    }
+
+    void isCircular()
+    {
+        Node *first = top;
+        Node *second = top;
+        while (first && second && second->next)
+        {
+            first = first->next;
+            second = second->next->next;
+            if (first == second)
+            {
+                std::cout << "Circle " << first->value << std::endl;
+                break;
+            }
+        }
+        std::cout << "NO Circle " << std::endl;
+    }
+
     void print()
     {
         Node *temp = top;
@@ -85,6 +113,10 @@ public:
         {
             temp->print_value();
             temp = temp->next;
+            if (temp == top)
+            {
+                break;
+            }
         }
         std::cout << std::endl;
     }
@@ -95,6 +127,7 @@ public:
         while (current)
         {
             Node *next = current->next;
+            std::cout << "deleting: " << current->value << " address: "<< current << std::endl;
             delete current;
             current = next;
         }
@@ -122,6 +155,10 @@ int main()
     stack.reverse();
     stack.print();
     stack.middle_element();
+    stack.isCircular();
+    // stack.make_circular();
+    stack.print();
+    stack.isCircular();
 
     return 0;
 }
