@@ -64,6 +64,20 @@ public:
         top = prev;
     }
 
+    void middle_element()
+    {
+        // using "runner technique" or "two pointer" technique with two pointers. The idea is to have two pointers, one moving at twice the speed of the other.
+        // When the faster pointer reaches the end of the linked list, the slower pointer will be pointing to the middle element.
+        Node *fast = top;
+        Node *slow = top;
+        while (fast && fast->next)
+        {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        std::cout << "Middle " << slow->value << std::endl;
+    }
+
     void print()
     {
         Node *temp = top;
@@ -97,11 +111,17 @@ int main()
     stack.push(13);
     // stack.print();
     stack.push(16);
+    stack.push(17);
+    stack.push(18);
+    stack.push(19);
+    // stack.push(20);
+    // stack.push(21);
     // stack.print();
     // stack.pop();
     stack.print();
     stack.reverse();
     stack.print();
+    stack.middle_element();
 
     return 0;
 }
