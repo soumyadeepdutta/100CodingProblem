@@ -89,7 +89,7 @@ public:
         lastNode->next = top;
     }
 
-    void isCircular()
+    void is_circular()
     {
         Node *first = top;
         Node *second = top;
