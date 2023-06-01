@@ -1,6 +1,6 @@
 // create a single linked list and show its operations.
 #include <iostream>
-#include <vector>
+#include <unordered_set>
 
 class Node
 {
@@ -106,6 +106,27 @@ public:
         std::cout << "NO Circle " << std::endl;
     }
 
+    void remove_duplicates()
+    {
+        std::unordered_set<int> visited;
+        Node *temp = top;
+        Node *prev = top;
+        while (temp)
+        {
+            if (visited.find(temp->value) != visited.end())
+            {
+                // std::cout << "Duplicate found " << temp->value << std::endl;
+                prev->next = temp->next;
+            }
+            else
+            {
+                visited.insert(temp->value);
+                prev = temp;
+            }
+            temp = temp->next;
+        }
+    }
+
     void print()
     {
         Node *temp = top;
@@ -142,10 +163,16 @@ int main()
     stack.push(12);
     // stack.print();
     stack.push(13);
+    stack.push(13);
+    stack.push(13);
+    stack.push(13);
+    stack.push(13);
     // stack.print();
     stack.push(16);
-    stack.push(17);
-    stack.push(18);
+    stack.push(16);
+    stack.push(16);
+    stack.push(16);
+    stack.push(16);
     stack.push(19);
     // stack.push(20);
     // stack.push(21);
@@ -155,10 +182,12 @@ int main()
     stack.reverse();
     stack.print();
     stack.middle_element();
-    stack.isCircular();
+    // stack.is_circular();
     // stack.make_circular();
+    // stack.print();
+    // stack.is_circular();
+    stack.remove_duplicates();
     stack.print();
-    stack.isCircular();
 
     return 0;
 }
